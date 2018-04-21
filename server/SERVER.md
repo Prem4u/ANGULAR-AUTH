@@ -11,7 +11,8 @@ Register user endpoint :
               "password": "test"
          }
 
-Login User endpoint :         
+Login User endpoint : 
+
      http://localhost:[port]/api/login
      body :
          {
