@@ -1,8 +1,10 @@
 # This is a project to understand express node api
 
 ## Endpoints
+
 Register user endpoint :
-     http://localhost:<port>/api/register
+
+     http://localhost:[port]/api/register
      body :
          {
              "email": "test.test@com",
@@ -10,7 +12,7 @@ Register user endpoint :
          }
 
 Login User endpoint :         
-     http://localhost:<port>/api/login
+     http://localhost:[port]/api/login
      body :
          {
              "email": "test.test@com",
