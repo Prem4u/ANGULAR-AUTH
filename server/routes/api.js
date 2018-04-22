@@ -44,6 +44,59 @@ routers.post('/login', (req, res) => {
 
     })
 
-})
+});
+//Event end points
+routers.get("/events",(req,res)=>{
+    let events=[
+        {
+            "id":"1",
+            "name": "Auto expo",
+             "discription": "This is auto expo",
+             "date":"2018-04-10T18:25:23.511Z"
+
+        },
+        {
+            "id":"2",
+            "name": "Auto expo",
+             "discription": "This is auto expo",
+             "date":"2018-04-10T18:25:23.511Z"
+
+        },
+        {
+            "id":"3",
+            "name": "Auto expo",
+             "discription": "This is auto expo",
+             "date":"2018-04-10T18:25:23.511Z"
+
+        }
+    ];
+    res.json(events);
+});
+routers.get("/special",(req,res)=>{
+    let events=[
+        {
+            "id":"1",
+            "name": "Auto expo",
+             "discription": "This is auto expo",
+             "date":"2018-04-10T18:25:23.511Z"
+
+        },
+        {
+            "id":"2",
+            "name": "Auto expo",
+             "discription": "This is auto expo",
+             "date":"2018-04-10T18:25:23.511Z"
+
+        },
+        {
+            "id":"3",
+            "name": "Auto expo",
+             "discription": "This is auto expo",
+             "date":"2018-04-10T18:25:23.511Z"
+
+        }
+    ];
+    res.json(events);
+});
 
 module.exports = routers;
