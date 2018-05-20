@@ -21,6 +21,7 @@ routers.get('/', (req, res) => {
 routers.post('/register', (req, res) => {
     let userData = req.body;
     let user = new User(userData);
+    console.log(userData)
     user.save((err, registeredUser) => {
         if (err)
             console.error("Error ! " + err);
